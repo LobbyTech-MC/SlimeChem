@@ -20,7 +20,7 @@ import io.github.addoncommunity.slimechem.lists.Constants;
 import io.github.addoncommunity.slimechem.utils.SubNum;
 import io.github.addoncommunity.slimechem.utils.SuperNum;
 import io.github.addoncommunity.slimechem.utils.Util;
-import io.github.mooy1.infinitylib.items.StackUtils;
+import io.github.mooy1.infinitylib.common.StackUtils;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
 import lombok.AccessLevel;
@@ -178,7 +178,7 @@ public class Isotope implements Ingredient, Atom {
     public static Isotope getByItem(ItemStack item) {
         if (item == null) return null;
 
-        String id = StackUtils.getID(item);
+        String id = StackUtils.getId(item);
         if (id == null) return null;
 
         for (Set<Isotope> isotopeSet : isotopes.values()) {

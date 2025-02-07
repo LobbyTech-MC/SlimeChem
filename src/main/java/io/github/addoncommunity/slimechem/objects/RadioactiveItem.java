@@ -1,13 +1,15 @@
 package io.github.addoncommunity.slimechem.objects;
 
+import java.util.Locale.Category;
+
+import org.bukkit.inventory.ItemStack;
+
 import io.github.addoncommunity.slimechem.implementation.attributes.Ingredient;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.Radioactive;
 import io.github.thebusybiscuit.slimefun4.core.attributes.Radioactivity;
 import lombok.Getter;
-import me.mrCookieSlime.Slimefun.Lists.RecipeType;
-import me.mrCookieSlime.Slimefun.Objects.Category;
-import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
-import org.bukkit.inventory.ItemStack;
 
 @Getter
 public class RadioactiveItem extends SlimefunItem implements Radioactive {

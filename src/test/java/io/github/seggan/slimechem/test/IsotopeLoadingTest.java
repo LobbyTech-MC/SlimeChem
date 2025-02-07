@@ -1,17 +1,18 @@
 package io.github.seggan.slimechem.test;
 
-import io.github.addoncommunity.slimechem.implementation.atomic.Element;
-import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.Isotope;
-import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.IsotopeLoader;
-import io.github.addoncommunity.slimechem.lists.Constants;
+import java.util.EnumMap;
+import java.util.Set;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-import java.util.EnumMap;
-import java.util.Set;
+import io.github.addoncommunity.slimechem.implementation.atomic.Element;
+import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.Isotope;
+import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.IsotopeLoader;
+import io.github.addoncommunity.slimechem.lists.Constants;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class IsotopeLoadingTest {

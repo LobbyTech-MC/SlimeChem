@@ -1,14 +1,15 @@
 package io.github.addoncommunity.slimechem;
 
-import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.IsotopeLoader;
-import io.github.addoncommunity.slimechem.setup.Registry;
-import io.github.mooy1.infinitylib.PluginUtils;
-import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import lombok.Getter;
+import javax.annotation.Nonnull;
+
 import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import javax.annotation.Nonnull;
+import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.IsotopeLoader;
+import io.github.addoncommunity.slimechem.setup.Registry;
+import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
+import lombok.Getter;
+import net.guizhanss.minecraft.guizhanlib.updater.GuizhanUpdater;
 
 
 public class SlimeChem extends JavaPlugin implements SlimefunAddon {
@@ -20,7 +21,10 @@ public class SlimeChem extends JavaPlugin implements SlimefunAddon {
     public void onEnable() {
         instance = this;
 
-        PluginUtils.setup("&bSlimeChem&7", this, "Slimefun-Addon-Community/SlimeChem/master", getFile());
+        if (getConfig().getBoolean("auto-update")
+                && getDescription().getVersion().startsWith("Build")) {
+            GuizhanUpdater.start(this, getFile(), "SlimefunGuguProject", "SlimeChem", "master");
+        }
         
         @SuppressWarnings("unused")
         final Metrics metrics = new Metrics(this, 9490);

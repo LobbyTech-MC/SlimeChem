@@ -248,11 +248,7 @@ public enum Element implements Ingredient, Atom {
         UNKNOWN("Unknown", "PURPLE"),
         CUSTOM("Custom", "MAGENTA");
 
-        Series(String name, String color) {
-			this.name = name;
-			this.color = color;
-		}
-		public String getColor() {
+        public String getColor() {
 			return color;
 		}
 		@Nonnull

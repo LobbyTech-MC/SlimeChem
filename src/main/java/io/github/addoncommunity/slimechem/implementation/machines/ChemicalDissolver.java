@@ -1,30 +1,29 @@
 package io.github.addoncommunity.slimechem.implementation.machines;
 
+import java.util.Arrays;
+
+import javax.annotation.Nonnull;
+
+import org.bukkit.Material;
+import org.bukkit.Tag;
+import org.bukkit.block.Block;
+import org.bukkit.inventory.ItemStack;
+
 import io.github.addoncommunity.slimechem.implementation.atomic.Element;
 import io.github.addoncommunity.slimechem.implementation.atomic.Molecule;
 import io.github.addoncommunity.slimechem.implementation.atomic.MoleculeIngredient;
 import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.Isotope;
 import io.github.addoncommunity.slimechem.lists.Categories;
 import io.github.addoncommunity.slimechem.lists.Items;
-import io.github.mooy1.infinitylib.abstracts.AbstractMachine;
-import io.github.mooy1.infinitylib.presets.MenuPreset;
-import io.github.mooy1.infinitylib.recipes.normal.RandomRecipeMap;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.RandomizedSet;
 import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
-import me.mrCookieSlime.Slimefun.Lists.RecipeType;
-import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
 import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
-import me.mrCookieSlime.Slimefun.cscorelib2.collections.RandomizedSet;
-import org.bukkit.Material;
-import org.bukkit.Tag;
-import org.bukkit.block.Block;
-import org.bukkit.inventory.ItemStack;
-
-import javax.annotation.Nonnull;
-import java.util.Arrays;
 
 /**
  * Dissolves {@link Molecule}s, {@link Material}s, and {@link SlimefunItemStack}s

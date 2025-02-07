@@ -1,17 +1,17 @@
 package io.github.seggan.slimechem.test;
 
-import io.github.addoncommunity.slimechem.implementation.atomic.Element;
-import io.github.addoncommunity.slimechem.lists.Constants;
-import io.github.addoncommunity.slimechem.utils.StringUtil;
-import io.github.addoncommunity.slimechem.utils.Util;
-import org.apache.commons.lang.StringUtils;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import io.github.addoncommunity.slimechem.implementation.atomic.Element;
+import io.github.addoncommunity.slimechem.lists.Constants;
+import io.github.addoncommunity.slimechem.utils.StringUtil;
+import io.github.addoncommunity.slimechem.utils.Util;
 
 public class UtilTest {
 

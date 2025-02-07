@@ -1,14 +1,15 @@
 package io.github.addoncommunity.slimechem.utils;
 
-import io.github.addoncommunity.slimechem.SlimeChem;
-import lombok.Data;
-import org.apache.commons.lang.WordUtils;
-
-import javax.annotation.Nonnull;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+
+import javax.annotation.Nonnull;
+
+import io.github.addoncommunity.slimechem.SlimeChem;
+import io.github.thebusybiscuit.slimefun4.libraries.commons.lang.WordUtils;
+import lombok.Data;
 
 public final class StringUtil {
 

@@ -1,5 +1,20 @@
 package io.github.addoncommunity.slimechem.setup;
 
+import java.util.ArrayList;
+import java.util.EnumMap;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.logging.Level;
+
+import javax.annotation.Nonnull;
+
+import org.bukkit.Material;
+import org.bukkit.inventory.ItemStack;
+
+import io.github.addoncommunity.slimechem.SlimeChem;
 import io.github.addoncommunity.slimechem.implementation.atomic.Element;
 import io.github.addoncommunity.slimechem.implementation.atomic.Molecule;
 import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.Isotope;
@@ -10,32 +25,19 @@ import io.github.addoncommunity.slimechem.implementation.machines.ChemicalCombin
 import io.github.addoncommunity.slimechem.implementation.machines.ChemicalDissolver;
 import io.github.addoncommunity.slimechem.implementation.machines.Cyclotron;
 import io.github.addoncommunity.slimechem.implementation.machines.NuclearFurnace;
+import io.github.addoncommunity.slimechem.implementation.subatomic.Boson;
 import io.github.addoncommunity.slimechem.implementation.subatomic.Lepton;
+import io.github.addoncommunity.slimechem.implementation.subatomic.Nucleon;
 import io.github.addoncommunity.slimechem.lists.Categories;
+import io.github.addoncommunity.slimechem.lists.Items;
+import io.github.addoncommunity.slimechem.lists.RecipeTypes;
 import io.github.addoncommunity.slimechem.objects.IngredientItem;
 import io.github.addoncommunity.slimechem.objects.RadioactiveItem;
 import io.github.addoncommunity.slimechem.utils.Util;
-import io.github.addoncommunity.slimechem.SlimeChem;
-import io.github.addoncommunity.slimechem.implementation.subatomic.Boson;
-import io.github.addoncommunity.slimechem.implementation.subatomic.Nucleon;
-import io.github.addoncommunity.slimechem.lists.Items;
-import io.github.addoncommunity.slimechem.lists.RecipeTypes;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import lombok.Getter;
-import me.mrCookieSlime.Slimefun.Lists.RecipeType;
-import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
-import org.bukkit.Material;
-import org.bukkit.inventory.ItemStack;
-
-import javax.annotation.Nonnull;
-import java.util.ArrayList;
-import java.util.EnumMap;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.logging.Level;
 
 public final class Registry {
     

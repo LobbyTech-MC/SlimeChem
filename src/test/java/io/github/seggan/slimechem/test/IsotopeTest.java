@@ -1,14 +1,15 @@
 package io.github.seggan.slimechem.test;
 
+import java.util.Optional;
+import java.util.Set;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
 import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.DecayType;
 import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.Isotope;
 import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.IsotopeLoader;
 import io.github.addoncommunity.slimechem.lists.Constants;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-
-import java.util.Optional;
-import java.util.Set;
 
 public class IsotopeTest {
 

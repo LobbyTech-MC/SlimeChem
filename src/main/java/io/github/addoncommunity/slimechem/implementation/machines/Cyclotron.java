@@ -1,29 +1,31 @@
 package io.github.addoncommunity.slimechem.implementation.machines;
 
-import io.github.addoncommunity.slimechem.implementation.atomic.Element;
-import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.Isotope;
-import io.github.addoncommunity.slimechem.lists.Categories;
-import io.github.addoncommunity.slimechem.lists.Items;
-import io.github.mooy1.infinitylib.abstracts.AbstractMachine;
-import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
-import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
-import me.mrCookieSlime.Slimefun.Lists.RecipeType;
-import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
-import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
-import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
-import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
-import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
-import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+import javax.annotation.Nonnull;
+
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
 
-import javax.annotation.Nonnull;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import io.github.addoncommunity.slimechem.implementation.atomic.Element;
+import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.Isotope;
+import io.github.addoncommunity.slimechem.lists.Categories;
+import io.github.addoncommunity.slimechem.lists.Items;
+import io.github.mooy1.infinitylib.abstracts.AbstractMachine;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
+import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
+import me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu;
+import me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow;
+import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 
 public class Cyclotron extends AbstractMachine {
 

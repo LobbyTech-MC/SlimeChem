@@ -1,11 +1,12 @@
 package io.github.seggan.slimechem.test;
 
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
 import io.github.addoncommunity.slimechem.implementation.atomic.Element;
 import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.Isotope;
 import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.IsotopeLoader;
 import io.github.addoncommunity.slimechem.lists.Constants;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
 
 public class ElementTest {
 

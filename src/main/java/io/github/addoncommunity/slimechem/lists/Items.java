@@ -1,15 +1,16 @@
 package io.github.addoncommunity.slimechem.lists;
 
+import org.bukkit.Material;
+
 import io.github.addoncommunity.slimechem.implementation.machines.ChemicalCombiner;
 import io.github.addoncommunity.slimechem.implementation.machines.ChemicalDissolver;
 import io.github.mooy1.infinitylib.presets.LorePreset;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.core.attributes.MachineTier;
 import io.github.thebusybiscuit.slimefun4.core.attributes.MachineType;
 import io.github.thebusybiscuit.slimefun4.utils.HeadTexture;
 import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
 import lombok.experimental.UtilityClass;
-import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
-import org.bukkit.Material;
 
 @UtilityClass
 public final class Items {

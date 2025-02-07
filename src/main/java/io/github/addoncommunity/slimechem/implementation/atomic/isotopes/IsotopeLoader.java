@@ -1,16 +1,17 @@
 package io.github.addoncommunity.slimechem.implementation.atomic.isotopes;
 
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
 import com.google.gson.JsonArray;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+
 import io.github.addoncommunity.slimechem.lists.Constants;
 import io.github.addoncommunity.slimechem.utils.StringUtil;
 import io.github.addoncommunity.slimechem.utils.SuperNum;
-
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 public class IsotopeLoader {
     private final String isotopeJSON;

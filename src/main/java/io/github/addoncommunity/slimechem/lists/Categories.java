@@ -1,20 +1,21 @@
 package io.github.addoncommunity.slimechem.lists;
 
 
-import io.github.addoncommunity.slimechem.SlimeChem;
-import me.mrCookieSlime.Slimefun.Objects.Category;
-import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
+
+import io.github.addoncommunity.slimechem.SlimeChem;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 
 public final class Categories {
     
     private static final SlimeChem instance = SlimeChem.getInstance();
     
-    public static final Category MACHINES = new Category(new NamespacedKey(instance, "machines"), new CustomItem(Material.DIAMOND_BLOCK, "Chemical Machines"), 3);
-    public static final Category MOLECULES = new Category(new NamespacedKey(instance, "molecules"), new CustomItem(Material.DIAMOND, "Molecules"), 3);
-    public static final Category ELEMENTS = new Category(new NamespacedKey(instance, "elements"), new CustomItem(Material.DIAMOND, "Elements"), 3);
-    public static final Category ISOTOPES = new Category(new NamespacedKey(instance, "isotopes"), new CustomItem(Material.DIAMOND, "Isotopes"), 3);
-    public static final Category SUBATOMIC = new Category(new NamespacedKey(instance, "subatomic"), new CustomItem(Material.DIAMOND, "Subatomic Particles"), 3);
+    public static final ItemGroup MACHINES = new ItemGroup(new NamespacedKey(instance, "machines"), new CustomItemStack(Material.DIAMOND_BLOCK, "Chemical Machines"), 3);
+    public static final ItemGroup MOLECULES = new ItemGroup(new NamespacedKey(instance, "molecules"), new CustomItemStack(Material.DIAMOND, "Molecules"), 3);
+    public static final ItemGroup ELEMENTS = new ItemGroup(new NamespacedKey(instance, "elements"), new CustomItemStack(Material.DIAMOND, "Elements"), 3);
+    public static final ItemGroup ISOTOPES = new ItemGroup(new NamespacedKey(instance, "isotopes"), new CustomItemStack(Material.DIAMOND, "Isotopes"), 3);
+    public static final ItemGroup SUBATOMIC = new ItemGroup(new NamespacedKey(instance, "subatomic"), new CustomItemStack(Material.DIAMOND, "Subatomic Particles"), 3);
 
 }

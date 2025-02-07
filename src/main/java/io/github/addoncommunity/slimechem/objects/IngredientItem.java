@@ -1,15 +1,9 @@
 package io.github.addoncommunity.slimechem.objects;
 
-import io.github.addoncommunity.slimechem.implementation.atomic.Molecule;
-import io.github.addoncommunity.slimechem.implementation.attributes.Ingredient;
-import io.github.thebusybiscuit.slimefun4.core.attributes.NotPlaceable;
-import io.github.thebusybiscuit.slimefun4.core.handlers.EntityInteractHandler;
-import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
-import lombok.Getter;
-import me.mrCookieSlime.Slimefun.Lists.RecipeType;
-import me.mrCookieSlime.Slimefun.Objects.Category;
-import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
-import me.mrCookieSlime.Slimefun.cscorelib2.inventory.ItemUtils;
+import java.util.HashMap;
+import java.util.Locale.Category;
+import java.util.Map;
+
 import org.bukkit.GameMode;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
@@ -17,8 +11,14 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
-import java.util.HashMap;
-import java.util.Map;
+import io.github.addoncommunity.slimechem.implementation.atomic.Molecule;
+import io.github.addoncommunity.slimechem.implementation.attributes.Ingredient;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.core.attributes.NotPlaceable;
+import io.github.thebusybiscuit.slimefun4.core.handlers.EntityInteractHandler;
+import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
+import lombok.Getter;
 
 /**
  * A {@link SlimefunItem} to hold any class implementing {@link Ingredient}

@@ -1,14 +1,13 @@
 package io.github.addoncommunity.slimechem.implementation.atomic;
 
-import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.Isotope;
-import io.github.addoncommunity.slimechem.implementation.attributes.Ingredient;
-import io.github.addoncommunity.slimechem.implementation.attributes.Itemable;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import lombok.Getter;
-import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
+import javax.annotation.Nonnull;
+
 import org.bukkit.inventory.ItemStack;
 
-import javax.annotation.Nonnull;
+import io.github.addoncommunity.slimechem.implementation.atomic.isotopes.Isotope;
+import io.github.addoncommunity.slimechem.implementation.attributes.Ingredient;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import lombok.Getter;
 
 /**
  * This class holds a {@link Element}, {@link Isotope},

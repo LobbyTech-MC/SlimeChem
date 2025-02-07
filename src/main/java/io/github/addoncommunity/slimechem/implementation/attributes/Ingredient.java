@@ -1,9 +1,9 @@
 package io.github.addoncommunity.slimechem.implementation.attributes;
 
-import io.github.addoncommunity.slimechem.implementation.atomic.MoleculeIngredient;
-import io.github.addoncommunity.slimechem.implementation.atomic.Molecule;
-
 import javax.annotation.Nonnull;
+
+import io.github.addoncommunity.slimechem.implementation.atomic.Molecule;
+import io.github.addoncommunity.slimechem.implementation.atomic.MoleculeIngredient;
 
 /**
  * This interface should be implemented by any {@link Object}
